@@ -3223,6 +3223,8 @@
     ((:fn (tf-state (after-timeout 200 (println *foo*) *foo*))))))
 
 ;;;; Testing utils
+;; TODO  https://github.com/ptaoussanis/encore/issues/37
+;; Move all to encore.test ns? Better alternatives?
 
 (defmacro expect
   ([             expr] `(is                        ~expr))
